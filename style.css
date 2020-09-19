@@ -1,0 +1,122 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+Body {
+    background: #eee;
+}
+
+/*.wrapper{
+    width: 100%; 
+    max-width: 960px; 
+    margin: 0 auto; 
+
+}
+/* Navbar */
+
+nav{
+background: #D3D3D3;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0; 
+    padding-left: 40px;
+    display: flex; 
+}
+
+nav li{
+    text-decoration: none;
+    color: #FF1493;
+    display: block; 
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+nav li:hover {
+    opacity: 0.5;
+}
+
+/*for screens smaller than 768 pixles*/
+
+/*@media screen and (min-width: 768px) {
+    nav ul{
+        
+    }
+}*/
+/* main picture */
+.wrapper
+{
+    display: flex auto; 
+    margin: 50;
+}
+.container
+{
+    position: relative;
+    text-align: center;
+    
+}
+
+img{
+    width: 100%;
+}
+
+
+.head-text{
+    background: #FF1493; 
+    position: absolute;
+    font-style: Impact, Charcoal, sans-serif;
+    top: 8px;
+    left: 16px;
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0%   {background: red; left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: blue; left: 200px; top: 200px;}
+    75%  {background: green; left: 0px; top: 200px;}
+    100% {background: red; left: 0px; top: 0px;}
+  }
+
+
+/* about section*/
+.about{
+    display: flex; 
+    flex-grow: 2; 
+    margin: 25 20 5;
+    
+    
+}
+.one
+{
+    background-color: green;
+    
+}
+.two
+{
+    background: red;
+}
+
+/*article section*/
+
+.box
+{
+    display: flex; 
+    flex-grow: 2; 
+    margin: 25 20 5;
+}
+.one
+{
+background: red; 
+}
+.two{
+ background: blue; 
+}
+
+.three
+{
+background: green;
+}
