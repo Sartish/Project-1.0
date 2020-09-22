@@ -7,14 +7,7 @@ Body {
     background: #eee;
 }
 
-/*.wrapper{
-    width: 100%; 
-    max-width: 960px; 
-    margin: 0 auto; 
-
-}
 /* Navbar */
-
 nav{
 background: #D3D3D3;
 }
@@ -38,27 +31,23 @@ nav li:hover {
     opacity: 0.5;
 }
 
-/*for screens smaller than 768 pixles*/
 
-/*@media screen and (min-width: 768px) {
-    nav ul{
-        
-    }
-}*/
 /* main picture */
 .wrapper
 {
-    display: flex auto; 
-    margin: 50;
+    display: flex block;
+    margin-top: 25px;
 }
+
+
 .container
 {
     position: relative;
-    text-align: center;
-    
 }
 
-img{
+img
+{
+    height: 600px;
     width: 100%;
 }
 
