@@ -10,13 +10,13 @@ body{
 }
 
 
-.container{
+.container-news{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 200;
 }
-    .container * {
+    .container-news * {
         box-sizing: border-box;
       }
 

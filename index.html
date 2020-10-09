@@ -2,10 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ease</title>
+    <title>Page</title>
     <link rel="stylesheet" href="style.css">
-<!--<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">-->
-  <!--<script src="https://kit.fontawesome.com/yourcode.js"></script>-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -19,9 +18,12 @@
 <!--Main background-->
 <div class="wrapper">
     <div class="container">
+        <div class="head-text">
+        <h1>Saritas Burger joint</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rem odit repellat, dolores exercitationem soluta maxime reiciendis repellendus necessitatibus a, vitae suscipit fugiat cum laboriosam. Hic, libero aliquid? Eius, illum.</p>
+    </div>
         <div class="picture">
-            <img src="Novels and more.png" alt="Logo">
-            <div class="head-text">Welcome</div>
+            <img src="Burger.png" alt="Logo">
         </div>
     </div>
 </div>
@@ -29,26 +31,92 @@
 <!--about boxes-->
 <div class="about">
     <div class= "about-section-one">
-        <img src="https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="newsletter">
-            <p>Want to know more?</p>
-            <button>Sign up</button>
-    </div>
-    <div class= "about-section-two">
-        <img src="https://images.unsplash.com/photo-1490059830487-2f86fddb2b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="newsletter">
-    </div>
+        <div class="menu"><h1>Veckans meny</h1><br><br>
+            <div class="zoom"><h3>🌶Hot chilli </h3>
+            <p>peperoni, chesse, pork</p><br></div>
+        
+            <div class="zoom">
+            <h3>Hot chilli </h3>
+             <p>peperoni, chesse, pork</p><br><br></div>
+
+            <div class="zoom">
+             <h3>Hot chilli </h3>
+            <p>peperoni, chesse, pork</p><br><br><br></div>
+            <button class="order">Order now</button>
+            
+        
+        </div>
+     
     </div>
 
-<!--Article boxes-->
-<div class="box">
-    <div class="box one">
-        <img src="https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="newsletter">
-    </div>
-    <div class="box two">
-        <img src="https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="newsletter">
-    </div>
-    <div class="box three">
-        <img src="https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="newsletter">
+    <div class= "about-section-two">
+        <div class="image-burger"><img src="hungry.png" alt="hungry"> </div>
+        <div class="concept">
+        <h2>Created with love for the burger</h2><br>
+        <p>For people looking for the ultimate burger</p>
+        </div>
+             
     </div>
 </div>
+
+
+
+
+<!--Team-->
+
+</head>
+<body>
+<div class="container-news">
+    <form id="myform">
+        <ul class="flex-outer">
+        <h1> Contact us</h1>
+    <div class="form-control">
+        <li>
+        <label for="name">First name</label>
+        <input type="text" id="first-name" placeholder="Enter your first name here">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+       </li>
+    </div>
+
+    <div class="form-control">
+        <li>
+        <label for="username">Last Name</label>
+        <input type="text" id="last-name" placeholder="Enter your last name here">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        </li>
+    </div>
+
+    <div class="form-control">
+        <li>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+       </li>
+    </div>
+
+    <div class="form-control">
+        <li>
+        <label for="Phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number here">
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+       </li>
+    </div>
+
+    <li>
+    <label for="message">Message</label>
+    <textarea id="message" rows="6" placeholder="Enter your message here"></textarea>
+    </li>
+    <button>Submit</button>
+    </ul>
+    </form>
+</div>
+<div class="footer"><p>@Saritas Burger Joint</p></div>
+    <script src="form.js"></script>
 </body>
 </html>
+            
+

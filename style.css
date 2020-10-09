@@ -1,3 +1,4 @@
+
 *{
     font-family: verdana;
     margin: 0;
@@ -5,14 +6,16 @@
 
 Body {
     background: #eee;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Navbar */
 nav{
-background: #D3D3D3;
+    background:#D8D8D8;
 }
 
 nav ul{
+    
     list-style-type: none;
     padding: 0; 
     padding-left: 40px;
@@ -21,106 +24,188 @@ nav ul{
 
 nav li{
     text-decoration: none;
-    color: #FF1493;
+    color: black;
     display: block; 
-    padding: 10px;
-    font-size: 12px;
+    padding: 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 nav li:hover {
-    opacity: 0.5;
+    color: orange;
 }
 
 
 /* main picture */
 .wrapper
 {
-    display: flex block;
-    margin-top: 25px;
+    display: flex; 
+    position: relative;
 }
 
 
 .container
 {
     position: relative;
+    width: 100%;
 }
 
 img
 {
-    height: 600px;
-    width: 100%;
+width: 100%;
+}
+
+.concept{
+    position: relative;
+    left: 4%;
 }
 
 /*text on the front image*/
 .head-text{
-    background: #FF1493; 
+    background: #ffdab9;
     position: absolute;
-    font-style: Impact, Charcoal, sans-serif;
-    top: 8px;
-    left: 16px;
-    animation: myfirst 5s 2;
-    animation-direction: alternate;
+    top: 150px;
+    left: 900px;
+    right: 20px;
+    opacity: 0.5;
 }
-
-@keyframes myfirst {
-    0%   {background: red; left: 0px; top: 0px;}
-    25%  {background: yellow; left: 200px; top: 0px;}
-    50%  {background: blue; left: 200px; top: 200px;}
-    75%  {background: green; left: 0px; top: 200px;}
-    100% {background: red; left: 0px; top: 0px;}
-  }
-
 
 /* about section*/
+
 .about {
     display: flex;
-    height: 40px;
-    align-content: space-between;
-    margin: 10 10 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
   }
-
-  .about-section-one{
-      margin: 2%;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-  }
+  /*Position relative on parent*/
+    
  
-  button{
+  /*Position aboslute on childs */
+
+/*Menu */
+  .about-section-one{
+    background-color: #D8D8D8;
+    position: relative;
+    height: 80%;
+    width: 80%;
+}
+
+.head-text-one
+{
     position: absolute;
-    font-style: Impact, Charcoal, sans-serif;
     align-self: center;
+    top: 70px;
+    left: 200px;
 
-  }
-
-  p
-  {
+}
+.menu{
+    top: 80px;
+    left: 200px;
     position: absolute;
-    font-style: Impact, Charcoal, sans-serif;
-    background-color: hotpink;
-    align-self: stretch;
+    transition: transform .2s;
+    cursor: pointer; 
+}
+
+.zoom:hover {
+    transform: scale(1.2); 
+
+}
+  .sign-up{
+    position: absolute;
+    align-self: center;
+    top: 400px;
+    left: 220px;
+
   }
+
+  button
+  {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    top: 80px;
+    left: 200px;
+  }
+
 
 .about-section-two{
-    margin: 2%;
+    background:orange;
+    position: relative;
+    height: 79%;
+    width: 45%;
+    border: solid;
 }
 
-.box {
-    display: flex;
-    height: 5px;
-    align-content: space-between;
-    margin: 650 100 100;
+
+/* Newsletter sign up*/
+.container-news{
+
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 600;
+    top:500px;
+}
+    .container-news * {
+        box-sizing: border-box;
+      }
+
+.flex-outer
+{
+    border: solid;
+    margin: 100px;
+   
+    
+}
+
+.flex-outer li
+{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin-bottom: 30px;
+margin-right: 80px;
+margin-top: 10px;
+
+}
+
+.flex-outer input, textarea{
+    width: 600px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  flex: 1 0;
+  max-width: 120px;
+}
+
+/* button styling*/
+
+.flex-outer button {
+    color: #fff !important;
+    text-transform: uppercase;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    top: 80px;
+    left: 500px;
+    margin-bottom: 2%;
   }
 
-  .one{
-    margin: 2%;
-    height: 10px;
-}
 
-.two{
-    margin: 2%;
-}
-
-.three{
-    margin: 2%;
-}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D8D8D8;
+    color: black;
+    width: 100%;
+  }
