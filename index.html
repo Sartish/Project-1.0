@@ -17,7 +17,7 @@
 
 <!--Main background-->
 <div class="wrapper">
-    <div class="container">
+    <div class="container-one">
         <div class="head-text">
         <h1>Saritas Burger joint</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rem odit repellat, dolores exercitationem soluta maxime reiciendis repellendus necessitatibus a, vitae suscipit fugiat cum laboriosam. Hic, libero aliquid? Eius, illum.</p>
@@ -32,8 +32,8 @@
 <div class="about">
     <div class= "about-section-one">
         <div class="menu"><h1>Veckans meny</h1><br><br>
-            <div class="zoom"><h3>🌶Hot chilli </h3>
-            <p>peperoni, chesse, pork</p><br></div>
+            <div class="zoom"><h3>🌶Hot chilli Burger </h3>
+            <p>Pulled pork, doubble cheddar, Hot chili souce, lettuce</p><br></div>
         
             <div class="zoom">
             <h3>Hot chilli </h3>
@@ -62,60 +62,53 @@
 
 
 
-<!--Team-->
+<!--Sign up for news letter-->
 
-</head>
-<body>
-<div class="container-news">
-    <form id="myform">
-        <ul class="flex-outer">
-        <h1> Contact us</h1>
-    <div class="form-control">
-        <li>
-        <label for="name">First name</label>
-        <input type="text" id="first-name" placeholder="Enter your first name here">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-       </li>
+<div class=newsletter>
+    <div class="container">
+	<div class="header">
+		<h2>Sign Up for newsletter</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="Firstname">First name</label>
+			<input type="text" placeholder="First name" id="firstname" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+        </div>
+        
+        
+		<div class="form-control">
+			<label for="Lastname">Last name</label>
+			<input type="text" placeholder="Lastname" id="lastname"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+        </div>
+        
+		<div class="form-control">
+			<label for="Phone">Phone</label>
+			<input type="numbers" placeholder="0761260032" id="phone"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+        </div>
+
+        <div class="form-control">
+			<label for="Email">Email</label>
+			<input type="email" placeholder="@gmail.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+        </div>
+        
+        <button>Submit</button>
+        
+	    </form>
     </div>
-
-    <div class="form-control">
-        <li>
-        <label for="username">Last Name</label>
-        <input type="text" id="last-name" placeholder="Enter your last name here">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-        </li>
-    </div>
-
-    <div class="form-control">
-        <li>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email here">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-       </li>
-    </div>
-
-    <div class="form-control">
-        <li>
-        <label for="Phone">Phone</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number here">
-        <i class="fas fa-check-circle"></i>
-        <i class="fas fa-exclamation-circle"></i>
-       </li>
-    </div>
-
-    <li>
-    <label for="message">Message</label>
-    <textarea id="message" rows="6" placeholder="Enter your message here"></textarea>
-    </li>
-    <button>Submit</button>
-    </ul>
-    </form>
 </div>
-<div class="footer"><p>@Saritas Burger Joint</p></div>
-    <script src="form.js"></script>
+
 </body>
 </html>
             
