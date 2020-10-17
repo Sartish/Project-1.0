@@ -2,82 +2,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
+    <title>Sarita's Burger Joint🍔</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!--NAVIGATION BAR-->
     <nav>
         <ul>
-            <li><a href="Home"></a>Home</li>
-            <li><a href="About"></a>About</li>
-            <li><a href="form.html"></a>Contact</li>
+            <li><a href="Home"></a><b>Home</b></li>
+            <li><a href="About"></a><b>About</b></li>
+            <li><a href="form.html"></a><b>Contact</b></li>
         </ul>
     </nav>
 
-<!--Main background-->
+<!--MAIN BACKGROUND-->
 <div class="wrapper">
     <div class="container-one">
-        <div class="head-text">
-        <h1>Saritas Burger joint</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis rem odit repellat, dolores exercitationem soluta maxime reiciendis repellendus necessitatibus a, vitae suscipit fugiat cum laboriosam. Hic, libero aliquid? Eius, illum.</p>
-    </div>
         <div class="picture">
-            <img src="Burger.png" alt="Logo">
+        <img src="Burger.png" alt="logo">
         </div>
+        <div class="head-text">
+        <h1 class="cssanimation sequence rotate">Saritas Burger joint</h1>
+        <p> Handmade real burgers, as they were meant to taste </p>
+        </div> 
     </div>
 </div>
 
-<!--about boxes-->
+
+<!--ABOUT MENU & ABOUT SOCIAL MEDIA COMMUNITY-->
 <div class="about">
     <div class= "about-section-one">
-        <div class="menu"><h1>Veckans meny</h1><br><br>
+        <div class="menu"><h1>Weekly Menu</h1><br><br>
             <div class="zoom"><h3>🌶Hot chilli Burger </h3>
-            <p>Pulled pork, doubble cheddar, Hot chili souce, lettuce</p><br></div>
+            <p><i>Choose between three diffferent kinds of Chilli</i></p><br></div>
         
             <div class="zoom">
-            <h3>Hot chilli </h3>
-             <p>peperoni, chesse, pork</p><br><br></div>
+            <h3>🧀Cheese Burger </h3>
+             <p><i>Choose between three diffferent kinds of cheeses</i></p><br></div>
 
             <div class="zoom">
-             <h3>Hot chilli </h3>
-            <p>peperoni, chesse, pork</p><br><br><br></div>
-            <button class="order">Order now</button>
-            
-        
+             <h3>🥬Veggie </h3>
+            <p><i>Choose between three diffferent kinds of veggie pattys</i></p><br><br><br></div>
+            <button class="order">Order now</button> 
         </div>
-     
     </div>
 
     <div class= "about-section-two">
-        <div class="image-burger"><img src="hungry.png" alt="hungry"> </div>
         <div class="concept">
-        <h2>Created with love for the burger</h2><br>
-        <p>For people looking for the ultimate burger</p>
-        </div>
-             
+            <div class=community>
+            <h2>We make burgers great again</h2><br><br><br><br>
+            <img src="hungry.png" alt="hungry">
+            <p>A community for people who appriciate the real deal</p><br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>     
     </div>
 </div>
 
 
-
-
-<!--Sign up for news letter-->
+<!--NEWSLETTER-->
 
 <div class=newsletter>
     <div class="container">
 	<div class="header">
-		<h2>Sign Up for newsletter</h2>
+		<h2>Sign Up for Newsletter👇</h2>
 	</div>
 	<form id="form" class="form">
 		<div class="form-control">
 			<label for="Firstname">First name</label>
-			<input type="text" placeholder="First name" id="firstname" />
+			<input type="text" placeholder="First name" id="firstname"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
-        
         
 		<div class="form-control">
 			<label for="Lastname">Last name</label>
@@ -102,14 +102,21 @@
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
-        
         <button>Submit</button>
-        
-	    </form>
+        </form>
     </div>
+    
 </div>
+
+<div class=fries>
+    <img src="fries 05.03.02.png" alt="">
+</div>
+<h2 class=awesome>Don't forget that you are <br>an awesome human being!</h2>
+
+
+<script src="form.js" defer></script>
+
 
 </body>
 </html>
-            
 

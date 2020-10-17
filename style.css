@@ -1,12 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
 *{
-    font-family: verdana;
-    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin:0;
+    padding: 0;
 }
 
-Body {
+body {
     background: #eee;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /* Navbar */
@@ -24,7 +33,7 @@ nav ul{
 
 nav li{
     text-decoration: none;
-    color: black;
+    color: #282828;
     display: block; 
     padding: 20px;
     font-size: 16px;
@@ -35,11 +44,13 @@ nav li:hover {
 }
 
 
-/* main picture */
+/* MAIN BACKGROUND */
+
 .wrapper
 {
-    display: flex; 
+    display: flex block; 
     position: relative;
+    width: 100%;
 }
 
 
@@ -51,39 +62,57 @@ nav li:hover {
 
 img
 {
-width: 100%;
+    width: 100%
 }
 
-.concept{
-    position: relative;
-    left: 4%;
-}
 
 /*text on the front image*/
 .head-text{
-    background: #ffdab9;
+    background-color: orange;
+    color:  #282828;
     position: absolute;
-    top: 150px;
-    left: 900px;
-    right: 20px;
-    opacity: 0.5;
+    top: 200px;
+    right: -250px;
+    transform: translateX(-50%) translateY(-50%); 
+    
 }
 
-/* about section*/
+
+h1 {
+    font-size: 4.3em;
+    letter-spacing: -4px;
+    font-weight: 700;
+    color: #7e2ea0;
+    text-align: center;
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.rotate { animation-name: rotate; animation-timing-function: ease-in-out }
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+
+/* ABOUT SECTION */
 
 .about {
     display: flex;
     position: absolute;
     height: 100%;
     width: 100%;
+    margin: 0;
     
   }
-  /*Position relative on parent*/
-    
- 
-  /*Position aboslute on childs */
+  /* Note to self: Position relative on parent*/
+  /* Note to self: Position aboslute on childs */
 
-/*Menu */
+/* ABOUT SECTION ONE MENU */
   .about-section-one{
     background-color: #D8D8D8;
     position: relative;
@@ -100,6 +129,7 @@ width: 100%;
 
 }
 .menu{
+    color:  #282828;
     top: 80px;
     left: 200px;
     position: absolute;
@@ -131,107 +161,87 @@ width: 100%;
     transition: all 0.4s ease 0s;
     top: 80px;
     left: 200px;
+    cursor: pointer;
+    
   }
 
-
+/*ABOUT SECTION ONE MENU SOCIAL MEDIA*/
 .about-section-two{
     background:orange;
+    display: flex;
     position: relative;
     height: 79%;
     width: 45%;
     border: solid;
 }
 
-
-/* Newsletter sign up*/
-.container-news{
-
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 600;
-    top:500px;
-}
-    .container-news * {
-        box-sizing: border-box;
-      }
-
-.flex-outer
+.concept
 {
-    border: solid;
-    margin: 100px;
-   
-    
-}
-
-.flex-outer li
-{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-margin-bottom: 30px;
-margin-right: 80px;
-margin-top: 10px;
-
-}
-
-.flex-outer input, textarea{
-    width: 600px;
-}
-
-.flex-outer li label,
-.flex-outer li p {
-  flex: 1 0;
-  max-width: 120px;
-}
-
-/* button styling*/
-
-.flex-outer button {
-    color: #fff !important;
-    text-transform: uppercase;
-    background: #ed3330;
-    padding: 20px;
-    border-radius: 5px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
+    display: flex;
     top: 80px;
-    left: 500px;
-    margin-bottom: 2%;
-  }
+    color: #282828;
+}
+
+/* social media buttons*/
+
+.social-media{
+    display: flex table-row;
+}
 
 
-.footer {
-    text-align: center;
+.fa {
     padding: 10px;
-    background-color: #D8D8D8;
-    color: black;
-    width: 100%;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
   }
 
+ /* Instagram */
+ .fa-instagram {
+    background: #9b59b6;
+    color: white;
+  }
 
-
-  /* Sign up for newsletter*/
-
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+/* NEWSLETTER*/
 
 
 .newsletter {
-	background-color: #9b59b6;
+    background-color: #9b59b6;
+    color: #282828;
 	font-family: 'Open Sans', sans-serif;
     display: flex; 
     position: relative;
 	align-items: center;
 	justify-content: center;
-	min-height: 100vh;
-    top: 100%;
+	min-height: 80vh;
+    top: 90%;
+    
 }
 
 .container {
 	background-color: #fff;
-	border-radius: 5px;
+    border-radius: 5px;
+    z-index: 1337;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	width: 400px;
@@ -317,15 +327,30 @@ margin-top: 10px;
 }
 
 .form button {
-	background-color: #8e44ad;
-	border: 2px solid #8e44ad;
-	border-radius: 4px;
-	color: #fff;
-	display: block;
-	font-family: inherit;
-	font-size: 16px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 100%;
+    text-transform: uppercase;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    top: 80px;
+    left: 200px;
+    width: 100%;
+    cursor: pointer;
 }
 
+.fries{
+    display:flex;
+    position: relative;
+    left: 500px;
+}
+
+.awesome
+{
+    color: white;
+    display: flex wrap;
+    position: relative;
+    bottom: 60%;
+    left: 5%;
+}
