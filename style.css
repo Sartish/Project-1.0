@@ -60,11 +60,19 @@ nav li:hover {
     width: 100%;
 }
 
-img
-{
-    width: 100%
+#burger-pic{
+  width: 100%;  
 }
 
+#hungry
+{
+    width: 100%;
+    
+}
+.picture
+{
+    width: 100%;
+}
 
 /*text on the front image*/
 .head-text{
@@ -106,8 +114,6 @@ h1 {
     position: absolute;
     height: 100%;
     width: 100%;
-    margin: 0;
-    
   }
   /* Note to self: Position relative on parent*/
   /* Note to self: Position aboslute on childs */
@@ -340,17 +346,25 @@ h1 {
     cursor: pointer;
 }
 
-.fries{
+.fries1{
     display:flex;
     position: relative;
-    left: 500px;
+    left: 12%;
+
 }
 
+
+.burger1{
+    display:flex;
+    position: relative;
+    left:-10%;
+
+}
 .awesome
 {
     color: white;
     display: flex wrap;
     position: relative;
     bottom: 60%;
-    left: 5%;
+    left: 2%;
 }

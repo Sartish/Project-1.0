@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="burger, fries, homemade">
     <title>Sarita's Burger Joint🍔</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,9 +11,9 @@
 <!--NAVIGATION BAR-->
     <nav>
         <ul>
-            <li><a href="Home"></a><b>Home</b></li>
-            <li><a href="About"></a><b>About</b></li>
-            <li><a href="form.html"></a><b>Contact</b></li>
+            <li><a href="About.html"></a><b>About</b></li>
+            <li><a href="Order.html"></a><b>Order</b></li>
+            <li><a href="Contact.html"></a><b>Contact</b></li>
         </ul>
     </nav>
 
@@ -20,7 +21,7 @@
 <div class="wrapper">
     <div class="container-one">
         <div class="picture">
-        <img src="Burger.png" alt="logo">
+        <img id="burger-pic" src="Burger.png" alt="logo">
         </div>
         <div class="head-text">
         <h1 class="cssanimation sequence rotate">Saritas Burger joint</h1>
@@ -44,7 +45,7 @@
             <div class="zoom">
              <h3>🥬Veggie </h3>
             <p><i>Choose between three diffferent kinds of veggie pattys</i></p><br><br><br></div>
-            <button class="order">Order now</button> 
+            <button class="order" onclick="window.location.href = 'order.html';">Order now</button> 
         </div>
     </div>
 
@@ -52,7 +53,7 @@
         <div class="concept">
             <div class=community>
             <h2>We make burgers great again</h2><br><br><br><br>
-            <img src="hungry.png" alt="hungry">
+            <img id=hungry src="hungry.png" alt="hungry">
             <p>A community for people who appriciate the real deal</p><br>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
@@ -103,18 +104,29 @@
 			<small>Error message</small>
         </div>
         <button>Submit</button>
+      
         </form>
+        
+    </div>
+  
+
+    <div class="burger1">
+        <img src="burger1.png" alt="">
+    </div>
+
+    
+    <div class="fries1">
+        <img src="fries1.png" alt="">
     </div>
     
+    
+    <div class="awesome">
+        <h2>You get a burger for free <br> when signing up!</h2>
+    </div>
 </div>
 
-<div class=fries>
-    <img src="fries 05.03.02.png" alt="">
-</div>
-<h2 class=awesome>Don't forget that you are <br>an awesome human being!</h2>
 
-
-<script src="form.js" defer></script>
+<script src="form.js"></script>
 
 
 </body>
