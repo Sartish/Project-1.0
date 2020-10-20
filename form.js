@@ -1,5 +1,9 @@
-//Declearing variables I want to use in functions//
 
+//NEWSLETTER FORM
+//källhänvsining url: https://www.youtube.com/watch?v=rsd4FNGTRBw
+
+
+//Declearing variables I want to use in functions//
 const form = document.getElementById('form');
 const firstname = document.getElementById('firstname');
 const lastname = document.getElementById('lastname');
@@ -7,13 +11,11 @@ const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 
 //Need to prevent the page from reloading when entering submit. Adding a event listener with a function to prevent this
-
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
 });
-
 
 //get values from the inputs (trim removes white space in the string)
 function checkInputs(){
@@ -22,9 +24,9 @@ function checkInputs(){
     const phoneValue = phone.value.trim();
     const emailValue = email.value.trim();
 
- //If they put in correct values we want to show success and wrong values, want to show error 
-  //show error // add error class //add success class
-
+//If they put in correct values we want to show success and wrong values, want to show error 
+//show error // add error class 
+//add success class
     if(firstnameValue ===''){
         setErrorFor(firstname, 'first name cannot be blank');
     } else{
