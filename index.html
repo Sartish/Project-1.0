@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +11,34 @@
 </head>
 <body>
 <!--NAVIGATION BAR-->
-    <nav>
-        <ul>
-            <li><a href="About.html"></a><b>About</b></li>
-            <li><a href="Order.html"></a><b>Order</b></li>
-            <li><a href="Contact.html"></a><b>Contact</b></li>
+<nav>
+    <ul>
+        <li><a href="About.html"></a><b>About</b></li>
+        <li><a href="Order.html"></a><b>Order</b></li>
+        <li><a href="Contact.html"></a><b>Contact</b></li>
         </ul>
     </nav>
 
 <!--MAIN BACKGROUND-->
-<div class="wrapper">
-    <div class="container-one">
-        <div class="picture">
-        <img id="burger-pic" src="Burger.png" alt="logo">
-        </div>
-        <div class="head-text">
-        <h1 class="cssanimation sequence rotate">Saritas Burger joint</h1>
-        <p> Handmade real burgers, as they were meant to taste </p>
-        </div> 
-    </div>
-</div>
 
+<div class="container-one">
+    <img id="burger-pic" src="Burger.png" alt="logo">
+    <div class="head-text">
+        <h1 class="cssanimation sequence rotate">Sarita´s Burger joint</h1>
+        <p> Handmade real burgers, as they were meant to taste </p>
+    </div> 
+</div>
 
 <!--ABOUT MENU & ABOUT SOCIAL MEDIA COMMUNITY-->
 <div class="about">
-    <div class= "about-section-one">
+    <div class="about-section-one">
         <div class="menu"><h1>Weekly Menu</h1><br><br>
             <div class="zoom"><h3>🌶Hot chilli Burger </h3>
-            <p><i>Choose between three diffferent kinds of Chilli</i></p><br></div>
+            <p><i>Choose between three diffferent kinds of Chilli</i></p><br><br></div>
         
             <div class="zoom">
             <h3>🧀Cheese Burger </h3>
-             <p><i>Choose between three diffferent kinds of cheeses</i></p><br></div>
+             <p><i>Choose between three diffferent kinds of cheeses</i></p><br><br></div>
 
             <div class="zoom">
              <h3>🥬Veggie </h3>
@@ -49,22 +47,25 @@
         </div>
     </div>
 
-    <div class= "about-section-two">
+    <div class="about-section-two">
         <div class="concept">
             <div class=community>
-            <h2>We make burgers great again</h2><br><br><br><br>
+            <h2 class=heading-two>We make burgers great again</h2><br><br><br>
             <img id=hungry src="hungry.png" alt="hungry">
-            <p>A community for people who appriciate the real deal</p><br>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
+                <p class="social-text">A community for people who appriciate the real deal</p><br>
+                <div class="social-community">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
             </div>
         </div>     
-    </div>
 </div>
 
 
-<!--NEWSLETTER-->
+
+<!--NEWSLETTER, källhänvsining url: https://www.youtube.com/watch?v=rsd4FNGTRBw-->
 
 <div class=newsletter>
     <div class="container">
@@ -73,62 +74,49 @@
 	</div>
 	<form id="form" class="form">
 		<div class="form-control">
-			<label for="Firstname">First name</label>
-			<input type="text" placeholder="First name" id="firstname"/>
+			<label for="firstname">First name</label>
+			<input placeholder="First name" id="firstname"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
         
 		<div class="form-control">
-			<label for="Lastname">Last name</label>
-			<input type="text" placeholder="Lastname" id="lastname"/>
+			<label for="lastname">Last name</label>
+			<input placeholder="Lastname" id="lastname"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
         
 		<div class="form-control">
-			<label for="Phone">Phone</label>
-			<input type="numbers" placeholder="0761260032" id="phone"/>
+			<label for="phone">Phone</label>
+			<input placeholder="0761260032" id="phone"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
 
         <div class="form-control">
-			<label for="Email">Email</label>
-			<input type="email" placeholder="@gmail.com" id="email" />
+			<label for="email">Email</label>
+			<input placeholder="@gmail.com" id="email" />
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
         </div>
         <button>Submit</button>
       
-        </form>
+    </form>
         
-    </div>
-  
-
-    <div class="burger1">
-        <img src="burger1.png" alt="">
-    </div>
-
-    
-    <div class="fries1">
-        <img src="fries1.png" alt="">
-    </div>
-    
-    
-    <div class="awesome">
-        <h2>You get a burger for free <br> when signing up!</h2>
-    </div>
 </div>
+
+    <div class="burger1"><img src="burger1.png" alt=""></div>
+    <div class="fries1"><img src="fries1.png" alt=""></div>
+    <div class="awesome"><h2>You get a burger for free <br> when signing up!</h2>
+    </div></div>
 
 
 <script src="form.js"></script>
-
-
 </body>
 </html>
 

@@ -11,7 +11,7 @@
 body {
     background: #eee;
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    margin: 0;
     top: 0;
     left: 0;
     height: 100%;
@@ -43,20 +43,10 @@ nav li:hover {
     color: orange;
 }
 
-
 /* MAIN BACKGROUND */
-
-.wrapper
-{
-    display: flex block; 
-    position: relative;
-    width: 100%;
-}
-
 
 .container-one
 {
-    position: relative;
     width: 100%;
 }
 
@@ -64,15 +54,6 @@ nav li:hover {
   width: 100%;  
 }
 
-#hungry
-{
-    width: 100%;
-    
-}
-.picture
-{
-    width: 100%;
-}
 
 /*text on the front image*/
 .head-text{
@@ -84,7 +65,6 @@ nav li:hover {
     transform: translateX(-50%) translateY(-50%); 
     
 }
-
 
 h1 {
     font-size: 4.3em;
@@ -111,32 +91,24 @@ h1 {
 
 .about {
     display: flex;
-    position: absolute;
     height: 100%;
     width: 100%;
+    margin-bottom: 10%;
   }
-  /* Note to self: Position relative on parent*/
-  /* Note to self: Position aboslute on childs */
+
 
 /* ABOUT SECTION ONE MENU */
-  .about-section-one{
+.about-section-one{
     background-color: #D8D8D8;
     position: relative;
-    height: 80%;
+    height: 50%;
     width: 80%;
 }
 
-.head-text-one
-{
-    position: absolute;
-    align-self: center;
-    top: 70px;
-    left: 200px;
 
-}
 .menu{
     color:  #282828;
-    top: 80px;
+    top: 60px;
     left: 200px;
     position: absolute;
     transition: transform .2s;
@@ -147,7 +119,7 @@ h1 {
     transform: scale(1.2); 
 
 }
-  .sign-up{
+.sign-up{
     position: absolute;
     align-self: center;
     top: 400px;
@@ -172,24 +144,44 @@ h1 {
   }
 
 /*ABOUT SECTION ONE MENU SOCIAL MEDIA*/
+
 .about-section-two{
     background:orange;
     display: flex;
-    position: relative;
-    height: 79%;
-    width: 45%;
+    margin-top: 5%;
+    width: 60%;
     border: solid;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-.concept
+.heading-two
 {
-    display: flex;
-    top: 80px;
-    color: #282828;
+    padding-left: 20%;
+    padding-top: 5%;
+    padding-bottom: -5%;
+    
+}
+#hungry
+{
+    width: 100%;
+    margin-top: -10%;
 }
 
-/* social media buttons*/
+.social-text
+{
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+}
 
+/* Social media buttons*/
+
+.social-community
+{
+    padding-left: 35%;
+    padding-bottom: 8%; 
+}
 .social-media{
     display: flex table-row;
 }
@@ -228,8 +220,9 @@ h1 {
     color: white;
   }
 
-/* NEWSLETTER*/
 
+
+/* NEWSLETTER*/
 
 .newsletter {
     background-color: #9b59b6;
